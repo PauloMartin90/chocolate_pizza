@@ -65,63 +65,38 @@ body {
     position: relative;
   }
   
-  .hero-text {
-    height: 12rem;
-    position: absolute;
-    background-color: grey;
-    color: black;
-    top: 25%; 
-    left: 25%; 
-    right: 25%;
-  }
+  .recipe p {
+    text-align: left;
+    background: #ffffff;
+    margin: 20px 0px;
+    padding: 0px 60px 0px 0px;
+}
   
-  .hero-text h1 {
-    font-size: 3rem;
-    margin: 2rem 0;
-    text-align: center;
-  }
+
+  /* CURRENT WORKING AREA */
+
+#list-items {
+  background-image: url('images/list-bg.png');
+  padding: 50px 50px;
   
-  .hero-text p {
-    text-align: center;
-  }
-  
-  section.two-feature img {
-    width: 50%;
+}
+
+
+  .items_1 ul {
     float: left;
-    padding-right: 1rem;
+    padding: 0px 5rem;
+
   }
-  
-  section.two-feature div {
-    width: 50%;
+
+  .items_2 ul {
     float: right;
-    padding-left: 1rem;
+    padding: 0px 5rem;
   }
-  
-  section.two-feature h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  section.two-feature p {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin-bottom: 1rem;
-  }
-  
-  .button {
-    display: block;
-    width: 8rem;
-    text-align: center;
-    background-color: gray;
-    padding: 1.25rem 3rem;
-    border-radius: 1rem;
-    text-decoration: none;
-  }
-  
+
   footer p {
     text-align: center;
     width: 100%;
-    margin: 5rem 0;
+    /* margin: 5rem 0; */
   }
 
   td {
@@ -138,4 +113,8 @@ th {
     font-size: 20px;
     text-align: center;
     background-color: blanchedalmond;
+}
+
+#deliciousLog {
+      float: left;
 }
