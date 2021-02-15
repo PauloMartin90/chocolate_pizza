@@ -1,141 +1,111 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Wireframe</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  
-  <!-- Navigation Bar -->
-  <header>
-    <div class="wrapper">
+  <head>
+    <title>Chocolate Pizza</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
       <nav>
-        <!-- Delicious -->
-        <img class='logo'src='images/logo.png'>
-        <!-- Float <h2> later -->
-        <div class='deliciousLogo'>
-          <h2>Delicious</h2>
-              <p>THE BEST FOOD BLOG ON THE WEB</p>
+        <div class="banner-left">
+          <div class="logo">
+            <img src="assets/logo.png" />
+          </div>
+          <div class="title">
+            <p class="delicious">Delicious</p>
+            <p class="sub-delicious">THE BEST FOOD BLOG ON THE WEB.</p>
+          </div>
         </div>
-    <!-- Little Logo Images -->
-        <div>
-          <img class='logo'src='images/fb-icon.png'>
-          <img class='logo'src='images/twit-icon.png'>
-          <img class='logo'src='images/gp-icon.png'>
-          <img class='logo'src='images/insta-icon.png'>
-          <img class='logo'src='images/flic-icon.png'>
-          <img class='logo'src='images/pint-icon.png'>
-          <img class='logo'src='images/rss-icon.png'>
-          <img class='logo'src='images/mail-icon.png'>
+        <div class="banner-right">
+          <div class="social">
+            <img src="assets/fb-icon.png"/>
+            <img src="assets/twit-icon.png"/>
+            <img src="assets/gp-icon.png"/>
+            <img src="assets/insta-icon.png"/>
+            <img src="assets/flic-icon.png"/>
+            <img src="assets/pint-icon.png"/>
+          </div>
+          <div class="rss-email">
+            <img src="assets/rss-icon.png">
+            <img src="assets/mail-icon.png">
+          </div>
         </div>
       </nav>
-    </div>
-  </header>
-
-   
-  <div class="wrapper">
+      <div class="linebreak"></div>
+    </header>
     <main>
-      
-      <!-- Title Banner -->
-      <div class="wrapper">
-        <nav>
-          <img class="logo" src="https://via.placeholder.com/200x70/000000"/>
-          <img class="logo" src="https://via.placeholder.com/200x70/000000"/>
-        </nav>
-      </div>
-
-      <!-- Banner -->
-      <section class="hero blade">
-        <img src="images/choco-pizza.png"/>
-      </section>
-
-
-      <!-- Article Section -->
-      <div class="recipe">
-              <p>For the fig swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.</p>
-
-              <p>Ice cream: In a mall pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.</p>
-
-              <p>Using and ice cream machine, pour liquids into the frozen basin an process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass Tupperware. Freeze for at least two hours before.</p>
+      <div class="headline">
+        <div class="headline-left">
+          <h1>Chocolate Pizza</h1>
+          <h3>POSTED ON 15 DEC 2013 / DESSERTS</h3>
+        </div>
+        <div class="headline-right">
+          <div class="print-left">
+            <img src="assets/print-icon.png"/>
           </div>
-    
-   
-    
-
-  <div id="list-items">
-    <!-- Create an img background -->
-    <div class="items_1">
-      <ul>
-        <li>1 ½ cups milk</li>
-        <li style="text-decoration: line-through;">½ cup mascarpone</li>
-        <li>1 lb Black Mission Figs</li>
-        <li>½ cup brown sugar</li>
-        <li>2-4 tbsp water</li>
-      
-      </ul>
-    </div> 
-
-    <div class='items_2'>
-      <ul>
-        <li>1 ½ cups heavy cream</li>
-        <li style="text-decoration: line-through;">1 lemon, juiced</li>
-        <li>2 egg yolks</li>
-        <li>1 lemon, juiced</li>
-        <li>2 tbsp butter</li>
-        <li style="text-decoration: line-through;">1 cup honey roasted pecans, roughly
-          chopped</li>
-      
-      </ul>
-    </div> 
-    </div>
-
-      <script src="app.js"></script>
-
-    
+          <div class="print-right">
+            <p class="sm-txt">PRINT</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/choco-pizza.png"/>
+      </div>
+      <article>
+        <p>For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.</p>
+        <p>Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.</p>        
+        <p>Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam misture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen misture into the pyrex dish or glass tupperware. Freeze for at least two hours before serving.</p>
+      </article>
+      <div class="ingredients">
+        <div class="ingredients-left">
+          <ul>
+            <li><input type="checkbox">1 1/2 cups milk</li>
+            <li><input type="checkbox">1/2 cups mascarpone</li>
+            <li><input type="checkbox">1/2 tsp pink salt</li>
+            <li><input type="checkbox">1 lb Black Mission Figs</li>
+            <li><input type="checkbox">1/2 cup brown sugar</li>
+            <li><input type="checkbox">2-4 tbsp water</li>
+          </ul>
+        </div>
+        <div class="ingredients-right">
+          <ul>
+            <li><input type="checkbox">1 1/2 cups heavy cream</li>
+            <li><input type="checkbox" checked>1/3 granulated sugar</li>
+            <li><input type="checkbox" checked>2 egg yolks</li>
+            <li><input type="checkbox">1 lemon, juiced</li>
+            <li><input type="checkbox">2 tbsp butter</li>
+            <li><input type="checkbox">1 cup honey roasted pecans, roughly</li>
+            <li class="indent">chopped</li>
+          </ul>
+        </div>
+      </div>
     </main>
-  </div>
-  <footer>
-    <section>
-      <img class="logo" src="images/van-pic.png"/>
-      <h2>Vanessa Stevenson</h2>
-      <p>Food Enthusiast, photography fan. Add a pinch of raw foodism and thats pretty much who I am</p>
-    </section>
-    <section>
-     <p> Share Button </p>
-    </section>
-
-  </footer>
-</body>
+    <footer>
+      <div class="linebreak"></div>
+      <div class="about-and-share">
+        <div class="about">
+          <div class="headshot">
+            <img src="assets/van-pic.png"/>
+          </div>
+          <div class="author">
+            <h2>Vanessa Stevenson</h2>
+            <p class="bio">Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+          </div>
+        </div>
+        <div class="share">
+          <button>SHARE RECIPE</button>
+        </div>
+      </div>
+      <div class="sm-logo-line">
+        <div class="sm-logo">
+          <img src="assets/small-logo.png"/>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="copyright">
+        <p class="footer">Delicious &copy; 2013 &bull; All Rights Reserved.</p>
+        <p class="footer">FancyKat Builders</p>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
-
-
-<!-- ///////////////// -->
-<!-- /   Old Tools   / -->
-<!-- ///////////////// -->
-      
-    <!-- Sub-Banner
-      <section class="sub-banner blade">
-            <img src="https://via.placeholder.com/300x375/000000"/>
-            <img src="https://via.placeholder.com/300x375/000000"/>
-            <img src="https://via.placeholder.com/300x375/000000"/>
-      </section> -->
-
-
-
-      <!-- Button
-            <a class="button" href="" target="_blank">Call to Action</a> -->
-
-
-      <!-- Side By Side Feature
-      <section class="two-feature blade">
-          <img src="https://via.placeholder.com/480x375/000000"/>
-              <div>
-                <h2>Featured Section Heading</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia rem eaque repellat officiis suscipit sequi error quibusdam animi voluptatum natus! Dignissimos deserunt quos nostrum. Esse recusandae totam soluta fuga voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia sequi repellendus cumque aliquam. A mollitia eum culpa aspernatur, enim architecto at, odit nesciunt harum ut modi eligendi ad eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, fugit? Enim expedita dolorum assumenda tempora quos et autem laudantium incidunt blanditiis atque quo illo debitis vitae ipsam, eligendi, sapiente soluta.</p>
-              </div>
-      </section> -->

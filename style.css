@@ -1,120 +1,238 @@
 body {
-    margin: 0;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  div.wrapper {
-    width: 960px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-  }
-  
-  header, footer {
-    display: flex;
-    background-color: slategray;
-  }
-  
-  header {
-    display: flex;
-    background-color: slategray;
-  }
-  
-  nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-  }
-  
-  nav a {
-    width: 100%;
-    text-align: center;
-  }
-  
-  main {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  section.blade {
-    margin: 1rem auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-  }
-  
-  section.blade.hero {
-    width: 100%;
-    margin-top: 0;
-    position: relative;
-  }
-  
-  .recipe p {
-    text-align: left;
-    background: #ffffff;
-    margin: 20px 0px;
-    padding: 0px 60px 0px 0px;
-}
-  
-
-  /* CURRENT WORKING AREA */
-
-#list-items {
-  background-image: url('images/list-bg.png');
-  padding: 50px 50px;
-  
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
-
-  .items_1 ul {
-    float: left;
-    padding: 0px 5rem;
-
-  }
-
-  .items_2 ul {
-    float: right;
-    padding: 0px 5rem;
-  }
-
-  footer p {
-    text-align: center;
-    width: 100%;
-    /* margin: 5rem 0; */
-  }
-
-  td {
-    border: 5px solid #212121;
-    padding: 10px 10px 10px 10px;
-    font-size: 20px;
-    text-align: center;
-    background-color: blanchedalmond;
+nav {
+  width: 900px;
+  height: 90px;
+  margin: 30px 0 0 0;
+}
+nav > div{
+  display: inline-block;
 }
 
-th {
-    border: 5px solid #212121;
-    padding: 10px 10px 10px 10px;
-    font-size: 20px;
-    text-align: center;
-    background-color: blanchedalmond;
+.banner-left {
+  float: left;
+  position: absolute;
+}
+.logo {
+  float: left;
+  margin: 10px 10px 10px 0; 
+}
+.title {
+  float: right;
+}
+p.delicious {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 42px;
+  position: relative;
+  right: 5px;
+  bottom: 5px;
+}
+p.sub-delicious{
+  margin: 0;
+  font-family: 'Times New Roman', Times, sans-serif;
+  font-size: 15px;
+  position: relative;
+  bottom: 19px;
+  color: rgb(98, 98, 98);
 }
 
-#deliciousLog {
-      float: left;
+.banner-right {
+  float: right;
+}
+
+div.social {
+  margin-top: 20px;
+  float: left;
+}
+
+div.rss-email {
+  float: right;
+  margin: 20px 0 0 10px;
+}
+img {
+  margin: 0;
+}
+
+div.linebreak {
+  height: 15px;
+  width: 900px;
+  background-image: url(assets/hr-img.png);
+}
+
+div.headline {
+  height: 60px;
+  width: 900px;
+  margin: 50px 0 30px 0;
+  position: relative;
+}
+div.headline-left {
+  float: left;
+}
+h1 {
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 42px;
+  position: relative;
+  bottom: 16px;
+}
+h3{
+  margin: 0;
+  font-size: 16px;
+  font-family: "BenchNine", sans-serif;
+  color:rgb(194, 191, 191);
+  position: relative;
+  bottom: 20px;
+
+}
+div.headline-right {
+  float: right;
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+}
+.print-left{
+  display: inline;
+  float: left;
+  position: relative;
+  top: 5px;
+  right: 3px;
+}
+.print-right {
+  display: inline;
+  float: right;
+}
+p.sm-txt{
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  font-family: "BenchNine", sans-serif;
+  color:rgb(194, 191, 191)
+}
+
+article > p {
+  text-indent: 30px;
+  color: rgb(123, 123, 123);
+  font-size: 16px;
+  font-family: "Merriweather-light";
+}
+
+div.ingredients {
+  background-image: url("assets/list-bg.png");
+  height: 300px;
+  margin: 0 0 50px 0;
+}
+
+div.ingredients-left {
+  float: left;
+  height: 200px;
+  width: 300px;
+  margin: 26px 0 0 20px;
+}
+div.ingredients-right {
+  float: right;
+  height: 200px;
+  width: 350px;
+  margin: 26px 180px 0 0;
+}
+li {
+  margin: 0 0 7px 0;
+  list-style-type: none;
+  color: rgb(88, 88, 88);
+  font-family: "Pangolin";
+  font-size: 19px;
+}
+li.strike-through {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"], input[type="checkbox"]:checked {
+  opacity: 0.4;
+}
+.indent {
+  text-indent: 19px;
+}
+
+div.about-and-share {
+  margin-top: 30px;
+  height: 100px;
+  width: 900px;
+  padding-bottom: 70px;
+}
+div.about {
+  float: left;
+}
+h2 {
+  margin: 0 0 10px 15px;
+  color: rgb(88, 88, 88);
+  font-family: "Merriweather-bold";
+  font-size: 20px;
+}
+p.bio{
+  margin: 0 0 0 15px;
+  color: rgb(88, 88, 88);
+  width: 570px;;
+  font-family: "Merriweather-light";
+}
+div.headshot{
+  float: left;
+}
+div.author {
+  float:right;
+}
+div.share {
+  float: right;
+}
+button {
+  margin-top: 10px;
+  border: none;
+  height: 45px;
+  width: 180px;
+  color: white;
+  background-color: rgb(205, 92, 58);
+  font-family: "BenchNine", sans-serif;
+  font-size: 20px;
+}
+
+div.sm-logo-line {
+  position: relative;
+  height: 35px;
+  width: 900px;;
+}
+
+div.line {
+  position: absolute; 
+  bottom: 38px;
+  z-index: 0;
+  height: 1px;
+  width: 900px;
+  background-color: rgb(227, 226, 226);
+}
+
+div.sm-logo {
+  position: absolute; 
+  bottom: 0;
+  z-index: 1;
+  height: 33px;
+  margin-left:435px;
+  margin-bottom: 15px;
+  border-right: 10px;
+  border-left: 10px;
+  border-color: white;
+  border-style: solid;
+}
+
+div.copyright {
+  text-align: center;
+  padding: 10px 0 100px 0;
+}
+p.footer {
+  margin: 0;
+  color:rgb(194, 191, 191);
+  font-family: "Merriweather-light";
+  font-size: 10px;
 }
